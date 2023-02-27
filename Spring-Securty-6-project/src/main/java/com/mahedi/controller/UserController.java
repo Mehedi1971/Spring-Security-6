@@ -22,13 +22,13 @@ public class UserController {
 	private UserService userService;
 	
 //	@PreAuthorize("hasRole('ROLE_ADMIN')")
-	@PostMapping("/saveuser")
+	@PostMapping("/save-user")
 	public User saveusers(@RequestBody User user) {
 		return userService.saveusers(user);
 	}
 	
 //	@PreAuthorize("hasRole('ROLE_ADMIN')")
-	@GetMapping("/allUser")
+	@GetMapping("/all-user")
 	public List<User> getUserAll(){
 		return userService.getUserAll();
 	}
